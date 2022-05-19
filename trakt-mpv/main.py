@@ -46,7 +46,8 @@ def hello(flags, configs):
      - Checks if the access_token has already been set (if not, exits as 11)
      - Checks if there is a need to refresh the token (automaticly refreshes and exits as 0)
     """
-    sleep(15)
+    """sleep(60)"""
+    sleep(0)
     if 'client_id' not in configs or 'client_secret' not in configs or len(configs['client_id']) != 64 or len(configs['client_secret']) != 64:
         sys.exit(10)
 
