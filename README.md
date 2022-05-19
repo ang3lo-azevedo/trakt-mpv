@@ -5,10 +5,6 @@ A MPV script that checks in your movies and shows with Trakt.tv without the need
 | ![mpv_screenshot](imgs/mpv_screenshot.jpg) | ![mpv_screenshot](imgs/trakt_screenshot.jpg) |
 | ------------------------------------------ | -------------------------------------------- |
 
-## Archival Notice
-
-**As you can see this repository has been archived. I've archived it since I've beeen busy lately and haven't really used mpv.net for a while. The code stills works perfectly and will scrobble on trakt.tv, however, I'm unable to dedicate more time to this project 😔.**
-
 ## How does it work?
 
 This script is written in both Lua and Python. The Lua part works as a front-end while the Python script is responsible for communicating with Trakt.tv.
