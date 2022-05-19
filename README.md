@@ -43,7 +43,7 @@ Press X and follow the instructions on the screen. After that you are all set ðŸ
 
 The current behaviors adopted by the plugin are:
 
- - It will start a scrobble as soon as the video starts.
+ - It will start a scrobble when you press the right click.
  - If you starting watching something while trakt.tv is still scrobbing, it will stop the scrobble, count it as seen and start scrobbing the current file (independently of how much you watched the previous one).
  - Right now there really isn't a good error reporting. So if you find an error I suggest you look at the mpv console.
 
@@ -51,7 +51,7 @@ The current behaviors adopted by the plugin are:
 
 Some improvements that can be done are:
 
-- [ ] Start scrobbing only after x seconds of playback. This would avoid acidental scrobbles.
+- [x] Start scrobbing only after x seconds of playback. This would avoid acidental scrobbles.
 - [ ] Allow the user to cancel a scrobble.
 - [ ] Allow a backup plan for when the show/movie isn't recognized.
 - [ ] Test in platforms other than Windows and mpv.net.
