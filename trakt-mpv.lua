@@ -18,8 +18,8 @@ local function evoque_python(flags)
     local location
 
     if os.getenv("HOME") == nil then
-        -- If you are using Windows, it will assume you are using mpv.net
-        location = os.getenv("APPDATA") .. "/mpv.net/Scripts/trakt-mpv/main.py"
+        -- If you are using Windows, it will assume you have the mpv folder on appdata
+        location = os.getenv("APPDATA") .. "/mpv/scripts/trakt-mpv/main.py"
     else
         -- If you are using Linux, it will assume you are using mpv
         location = os.getenv("HOME") .. "/.config/mpv/scripts/trakt-mpv/main.py"
