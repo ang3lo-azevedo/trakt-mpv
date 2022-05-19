@@ -85,7 +85,8 @@ end
 
 -- MAIN FUNCTION
 
-local function on_file_start(event)
+--local function on_file_start(event)
+local function start_trakt()
     local status = evoque_python({"--hello"})
 
     -- Check status and act accordingly
@@ -104,3 +105,4 @@ local function on_file_start(event)
 end
 
 mp.register_event("file-loaded", on_file_start)
+mp.add_key_binding('MBTN_RIGHT', 'start_trakt', start_trakt)
