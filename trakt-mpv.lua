@@ -105,4 +105,4 @@ local function start_trakt()
 end
 
 mp.register_event("file-loaded", start_trakt)
-mp.add_key_binding('t', 'start_trakt', start_trakt)
+mp.add_key_binding('t', 'manualy_start_scrobbling', start_trakt)
