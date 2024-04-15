@@ -18,8 +18,8 @@ local function evoque_python(flags)
     local location
 
     if os.getenv("HOME") == nil then
-        -- If you are using Windows, it will assume you have the mpv folder on appdata
-        location = os.getenv("APPDATA") .. "/mpv/scripts/trakt-mpv/main.py"
+        -- If you are using Windows, it will assume you are using mpv
+        location = os.getenv("APPDATA") .. "/mpv/Scripts/trakt-mpv/main.py"
     else
         -- If you are using Linux, it will assume you are using mpv
         location = os.getenv("HOME") .. "/.config/mpv/scripts/trakt-mpv/main.py"
@@ -99,10 +99,10 @@ local function start_trakt()
         send_message("[trakt-mpv] Press X to authenticate with Trakt.tv", "FF8800", 4)
         mp.add_forced_key_binding("x", "auth-trakt", activation)
     elseif status == 0 then
-        -- Plugin is setup, start the checkin
-        checkin()
+        -- Plugin is setup, start the checkin after 10 seconds
+        mp.add_timeout(10, checkin)
     end
 end
 
-mp.register_event("file-loaded", on_file_start)
-mp.add_key_binding('MBTN_RIGHT', 'start_trakt', start_trakt)
+mp.register_event("file-loaded", start_trakt)
+mp.add_key_binding('t', 'start_trakt', start_trakt)
