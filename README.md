@@ -55,6 +55,7 @@ Some improvements that can be done are:
 - [ ] Allow the user to cancel a scrobble.
 - [ ] Allow a backup plan for when the show/movie isn't recognized.
 - [x] Test in platforms other than Windows and mpv.net.
+- [ ] Refactor the code in Go
 
 ## Contributing
 
