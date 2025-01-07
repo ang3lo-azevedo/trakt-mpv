@@ -54,7 +54,7 @@ Some improvements that can be done are:
 - [x] Start scrobbing only after x seconds of playback. This would avoid acidental scrobbles.
 - [ ] Allow the user to cancel a scrobble.
 - [ ] Allow a backup plan for when the show/movie isn't recognized.
-- [ ] Test in platforms other than Windows and mpv.net.
+- [x] Test in platforms other than Windows and mpv.net.
 
 ## Contributing
 
